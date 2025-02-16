@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .container {
+    padding: 0.75rem; /* Equivalent to p-3 in Tailwind CSS */
+  }
+  .before {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: white;
+      width: 100%;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
