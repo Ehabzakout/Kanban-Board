@@ -107,7 +107,7 @@ export default function CreateBoard({
 
           <span
             onClick={addHandler}
-            className="duratin-200 block h-7 w-full cursor-pointer content-center rounded-full bg-main-purple/10 px-6 text-center text-[10px] font-bold text-main-purple hover:bg-main-purple/25"
+            className="duratin-200 block h-7 w-full cursor-pointer content-center rounded-full bg-main-purple/10 px-6 text-center text-[10px] font-bold text-main-purple hover:bg-main-purple/25 dark:bg-mauve9 dark:text-lines-light dark:hover:bg-mauve8"
           >
             + Add New Column
           </span>

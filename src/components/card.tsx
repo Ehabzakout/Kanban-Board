@@ -60,7 +60,7 @@ export default function Card({
   return (
     <>
       <div
-        className="mb-3 rounded-lg bg-white px-3 py-2"
+        className="mb-3 rounded-lg bg-white px-3 py-2 dark:bg-mauve11 dark:text-light-grey"
         ref={setNodeRef}
         style={style}
         {...attributes}
@@ -73,7 +73,7 @@ export default function Card({
               onBlur={onBlureHandler}
               onFocus={(e) => e.target.select()}
               autoFocus
-              className="h-auto w-3/4 whitespace-pre-wrap break-words"
+              className="h-auto w-3/4 whitespace-pre-wrap break-words dark:bg-mauve11 dark:text-light-grey"
               onKeyDown={(e) => {
                 if (e.key === "Enter") onBlureHandler(e);
               }}

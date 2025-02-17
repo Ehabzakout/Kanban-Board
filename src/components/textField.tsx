@@ -28,7 +28,7 @@ export default function TextField({
           placeholder={placeholder}
           required={required}
           className={clsx(
-            "h-6 w-full rounded-[4px] border border-medium-grey/25 py-2 pl-4 text-[9px] text-body-l outline-2 outline-main-purple",
+            "h-6 w-full rounded-[4px] border border-medium-grey/25 py-2 pl-4 text-[9px] text-body-l text-black outline-2 outline-main-purple dark:bg-mauve7 dark:outline-mauve12",
             { "border-red pr-32": isInvalid, "pr-4": isInvalid },
           )}
         ></input>

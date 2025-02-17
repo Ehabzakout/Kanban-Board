@@ -5,7 +5,11 @@ import { ReactNode } from "react";
 const button = cva(["rounded-full px-6 duratin-200 text-[10px] font-bold"], {
   variants: {
     intent: {
-      primary: ["bg-main-purple", "text-white", "hover:bg-main-purple-hover"],
+      primary: [
+        "bg-main-purple",
+        "text-white",
+        "hover:bg-main-purple-hover dark:bg-lines dark:hover:bg-mauve8",
+      ],
       secondary: ["text-main-purple bg-main-purple/10 hover:bg-main-purple/25"],
       destructive: ["text-white bg-red hover:bg-red-hover"],
     },

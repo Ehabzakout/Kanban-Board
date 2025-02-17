@@ -54,7 +54,7 @@ export default function Column({
   }
   return (
     <>
-      <div className="h-fit rounded-lg bg-lines-light p-2 text-[10px] sm:w-full md:w-[calc((100%-30px)/2)] lg:w-[calc((100%-30px)/3)]">
+      <div className="h-fit rounded-lg bg-lines-light p-2 text-[10px] sm:w-full md:w-[calc((100%-30px)/2)] lg:w-[calc((100%-30px)/3)] dark:bg-mauve8">
         <div className="group flex items-center justify-between">
           <h1 className="mb-2 font-bold">{`${title} ${tasks.length}`}</h1>
           <button
@@ -78,7 +78,7 @@ export default function Column({
         </div>
         <button
           onClick={() => addNewTask()}
-          className="before w-full tracking-widest text-medium-grey before:bg-medium-grey/25"
+          className="before w-full tracking-widest text-medium-grey before:bg-medium-grey/25 dark:text-mauve11 dark:before:bg-mauve9"
         >
           + Add New Task
         </button>
