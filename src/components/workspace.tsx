@@ -118,7 +118,7 @@ export default function WorkSpace() {
         onDragEnd={dragEndHandler}
         onDragOver={dragOverHandler}
       >
-        <div className="flex min-h-[80vh] w-3/4 flex-wrap content-start justify-between gap-3 bg-violet2 p-3 dark:bg-mauve11">
+        <div className="flex min-h-[90vh] w-3/4 flex-wrap content-start justify-between gap-3 bg-violet2 p-3 dark:bg-mauve11">
           <SortableContext
             items={tasksId}
             strategy={verticalListSortingStrategy}
