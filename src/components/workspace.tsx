@@ -118,7 +118,7 @@ export default function WorkSpace() {
         onDragEnd={dragEndHandler}
         onDragOver={dragOverHandler}
       >
-        <div className="flex min-h-[80vh] w-3/4 flex-wrap content-start justify-between gap-3 bg-violet2 p-3">
+        <div className="flex min-h-[80vh] w-3/4 flex-wrap content-start justify-between gap-3 bg-violet2 p-3 dark:bg-mauve11">
           <SortableContext
             items={tasksId}
             strategy={verticalListSortingStrategy}
@@ -135,7 +135,7 @@ export default function WorkSpace() {
           </SortableContext>
           <button
             onClick={addNewColumn}
-            className="h-fit rounded-lg bg-lines-light p-2 text-heading-s text-medium-grey sm:w-full md:w-[calc((100%-30px)/2)] lg:w-[calc((100%-30px)/3)]"
+            className="h-fit rounded-lg bg-lines-light p-2 text-heading-s text-medium-grey sm:w-full md:w-[calc((100%-30px)/2)] lg:w-[calc((100%-30px)/3)] dark:bg-mauve8 dark:text-mauve11"
           >
             + New Column
           </button>

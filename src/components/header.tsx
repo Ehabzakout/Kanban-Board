@@ -3,6 +3,7 @@ import CreateBoard from "./createBoard";
 import DialogDemo from "./Dialog";
 import DropdownMenuDemo from "./dropDown";
 import { DataContext } from "../App";
+import Mode from "./mode";
 
 export default function Header() {
   const { dataState, selectedBoardIndex, setDataState } =
@@ -24,18 +25,21 @@ export default function Header() {
   }
   return (
     <>
-      <header className="flex w-full items-center border-t border-lines/25 font-bold text-main-purple sm:text-heading-s md:text-heading-l">
-        <div className="w-1/4 border-l border-r border-lines/25 p-3">
+      <header className="flex w-full items-center border-t border-lines/25 font-bold text-main-purple sm:text-heading-s md:text-heading-l dark:border-lines-light dark:bg-lines dark:text-light-grey">
+        <div className="w-1/4 border-l border-r border-lines/25 p-3 dark:border-mauve8">
           Kanban
         </div>
-        <div className="flex w-3/4 items-center justify-between border-b border-r border-lines/25 p-3">
-          <h2>Platform Launch</h2>
+        <div className="flex w-3/4 items-center justify-between border-b border-r border-lines/25 p-3 dark:border-mauve8">
+          <div className="flex items-center gap-3">
+            <h2>Platform Launch</h2>
+            <Mode />
+          </div>
           <DropdownMenuDemo
             items={[
               {
                 lable: "Edit Board",
                 onClick: () => Edit(),
-                class: "text-black font-bold",
+                class: "text-black font-bold dark:text-white",
               },
               {
                 lable: "Delete Board",
@@ -44,7 +48,7 @@ export default function Header() {
               },
             ]}
             triggerComponent={
-              <button className="px-2 text-lines outline-none">
+              <button className="px-2 text-lines outline-none dark:text-lines-light">
                 <i className="fa-solid fa-ellipsis-vertical"></i>
               </button>
             }

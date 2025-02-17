@@ -12,7 +12,7 @@ export default function SideBar() {
 
   return (
     <>
-      <aside className="w-1/4 border border-t-0 border-lines/25 pt-4">
+      <aside className="w-1/4 border border-t-0 border-lines/25 pt-4 dark:border-mauve8 dark:bg-lines dark:text-lines-light">
         <p className="mb-3 px-3 sm:text-[8px] sm:font-bold md:text-heading-s">
           All Board ({dataState.length})
         </p>
@@ -22,9 +22,9 @@ export default function SideBar() {
               <button
                 onClick={() => setSelectedBoardIndex(index)}
                 className={clsx(
-                  "flex w-full gap-1 rounded-r-full text-start text-medium-grey data-[isactive=true]:hover:bg-violet3 data-[isactive=true]:hover:text-main-purple sm:p-1 md:p-3",
+                  "flex w-full gap-1 rounded-r-full text-start text-medium-grey data-[isactive=true]:hover:bg-violet3 data-[isactive=true]:hover:text-main-purple sm:p-1 md:p-3 dark:text-lines-light dark:data-[isactive=true]:hover:bg-mauve7",
                   {
-                    "bg-main-purple !text-white":
+                    "bg-main-purple !text-white dark:bg-mauve10":
                       selectedBoardIndex === index && open === false,
                   },
                 )}
@@ -43,9 +43,10 @@ export default function SideBar() {
               triggerCompenet={
                 <button
                   className={clsx(
-                    "w-full rounded-r-full text-start text-main-purple data-[isactive=true]:hover:bg-violet3 data-[isactive=true]:hover:text-main-purple sm:p-1 md:p-3",
+                    "w-full rounded-r-full text-start text-main-purple data-[isactive=true]:hover:bg-violet3 data-[isactive=true]:hover:text-main-purple sm:p-1 md:p-3 dark:text-lines-light dark:data-[isactive=true]:hover:bg-mauve7",
                     {
-                      "bg-main-purple !text-white": open === true,
+                      "bg-main-purple !text-white dark:bg-mauve10":
+                        open === true,
                     },
                   )}
                   data-isactive={open === false}
